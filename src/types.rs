@@ -33,7 +33,8 @@ impl Example for AppConfig {
         Self {
             name: "firefox-demo".to_string(),
             interaction_model: InteractionModel::X11,
-            images: vec!["ghcr.io/twizmwazin/app-container/firefox-demo:latest".to_string()],
+            //images: vec!["ghcr.io/twizmwazin/app-container/firefox-demo:latest".to_string()],
+            images: vec!["localhost/firefox-demo:latest".to_string()],
             always_pull_images: false,
         }
     }
